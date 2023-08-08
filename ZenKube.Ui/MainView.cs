@@ -20,7 +20,8 @@ namespace ZenKube.Ui
             // By using Dim.Fill(), it will automatically resize without manual intervention
             Width = Dim.Fill();
             Height = Dim.Fill();
-            Console.WriteLine($"KubeCtl is installed: {zk.Manager.getKubeCtlInfo().Content.IsInstalled              ()}");
+            Console.WriteLine($"KubeCtl is installed: {zk.Manager.getKubeCtlInfo().Content.IsInstalled()}");
+            Console.WriteLine($"KubeCtl is installed: {zk.Manager.getFullKubeCtlInfo().Content.IsInstalled()}");
 
             var menu = new MenuBar(new MenuBarItem[] {
             new MenuBarItem ("_File", new MenuItem [] {

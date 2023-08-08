@@ -11,6 +11,7 @@ namespace ZenKube.Models.Zk
         public string Name;
         public string Description;
         public string Command;
+        public string ApiType;
         public List<CommandOverride> Overrides=new List<CommandOverride>();
     }
 }

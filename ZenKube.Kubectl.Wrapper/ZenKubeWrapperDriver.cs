@@ -17,6 +17,7 @@ namespace ZenKube.Kubectl.Wrapper
             Name = "Version",
             Description = "Get the Version of the Kubectl instance",
             Command = "version",
+           
         };
 
         DriverCommand IZenKubeWrapperDriver.NameSpaces => new DriverCommand()

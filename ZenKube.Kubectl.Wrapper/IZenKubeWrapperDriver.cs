@@ -7,7 +7,7 @@ using ZenKube.Models.Zk;
 
 namespace ZenKube.Kubectl.Wrapper
 {
-    internal interface IZenKubeWrapperDriver
+    public interface IZenKubeWrapperDriver
     {
         public DriverCommand Version{ get; }
         public DriverCommand NameSpaces { get; }
